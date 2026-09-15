@@ -1,0 +1,171 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #8bd3c9;
+    background-color: #364857;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+header {
+    padding: 24px 0;
+    border-bottom: 2px solid #0a5af0;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #258db3;
+    margin: 12px 0 4px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #258db3;
+    margin: 32px 0 8px;
+}
+
+.chamada {
+    font-size: 18px;
+    color: #0a5af0;
+    margin: 0;
+}
+
+.observacao {
+    font-size: 14px;
+    color: #0a5af0;
+}
+
+nav a {
+    margin-right: 16px;
+    color: #1B6E8C;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px
+}
+
+.imagem-praia {
+    width: 90%;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+dd {
+    margin-left: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 640px;
+}
+
+td {
+    border: 1px solid #C9CFD8;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+iframe {
+    border: 1px solid #C9CFD8;
+    max-width: 640px;
+}
+
+form {
+    max-width: 520px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.opcao {
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.opcao input {
+    width: auto;
+}
+
+.opcao label {
+    display: inline;
+    margin: 0;
+}
+
+.dica {
+    font-size: 14px;
+    color: #0a5af0;
+    margin: 4px 0 0;
+}
+
+fieldset {
+    border: 1px solid #C9CFD8;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+legend {
+    padding: 0 6px;
+    font-weight: bold;
+}
+
+.botao-falso {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 12px 20px;
+    border: 1px solid #C9CFD8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #9AE;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 16px 0;
+    border-top: 1px solid #0a5af0;
+    font-size: 14px;
+}

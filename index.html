@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formatura TI116 — Vai Dar Praia. Confirme sua presença.">
+    <title>Formatura TI116 — Vai Dar Praia</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/formatura_02.jpg" alt="Formatura da turma" height="440">
+        <h1>Formatura TI116 — Vai Dar Praia</h1>
+        <p class="chamada">Confraternização de formatura da turma de Técnico em Informática</p>
+        <nav aria-hidden="true">
+            <a href="#evento">O evento</a>
+            <a href="#quando-onde">Quando e onde</a>
+            <a href="#programacao">Programação</a>
+            <a href="#confirmacao">Confirmar</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="evento">
+            <h3>O evento</h3>
+            <p>Um dia inteiro de praia para fechar o curso. A turma inteira,
+                as famílias que quiserem vir e os professores da área técnica.
+                Transporte fretado, saída e volta juntos.</p>
+            <p class="observacao">Participação aberta a toda a turma. Sem custo de
+                transporte para quem confirmar dentro do prazo.</p>
+        </section>
+
+        <section id="quando-onde">
+            <h3>Quando e onde</h3>
+            <dl>
+                <dt>Data</dt>
+                <dd><time datetime="2026-12-12">Sábado, 12 de dezembro de 2026</time></dd>
+                <dt>Horário</dt>
+                <dd>Das 9h às 18h</dd>
+                <dt>Onde</dt>
+                <dd>Praia do Sonho, Itanhaém — litoral sul de São Paulo</dd>
+                <dt>Confirmação até</dt>
+                <dd><time datetime="2026-11-20">20 de novembro de 2026</time></dd>
+            </dl>
+            <img class="imagem-praia" src="img/praia_02.png" alt="Curtindo a praia" height="450">
+        </section>
+
+        <section id="programacao">
+            <h3>Programação do dia</h3>
+            <table>
+                <caption>Horários previstos</caption>
+                <tr>
+                    <td>Horário</td>
+                    <td>O que acontece</td>
+                    <td>Onde</td>
+                </tr>
+                <tr>
+                    <td>7h00</td>
+                    <td>Concentração e chamada</td>
+                    <td>Ponto de saída</td>
+                </tr>
+                <tr>
+                    <td>9h00</td>
+                    <td>Chegada e montagem da base</td>
+                    <td>Quiosque reservado</td>
+                </tr>
+                <tr>
+                    <td>12h30</td>
+                    <td>Almoço coletivo</td>
+                    <td>Quiosque reservado</td>
+                </tr>
+                <tr>
+                    <td>15h00</td>
+                    <td>Torneio de futevôlei</td>
+                    <td>Faixa de areia</td>
+                </tr>
+                <tr>
+                    <td>17h30</td>
+                    <td>Foto da turma e embarque</td>
+                    <td>Estacionamento</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="como-chegar">
+            <h3>Como chegar</h3>
+            <p>O ônibus sai do ponto combinado com a comissão. O trajeto leva
+                cerca de duas horas.</p>
+            <iframe src="mapa.html" width="100%" height="260" loading="lazy"></iframe>
+        </section>
+
+        <section id="confirmacao">
+            <h3>Confirme sua presença</h3>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone com DDD</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[0-9\(\)\-\s]{10,16}"
+                        required>
+                    <p class="dica" id="dica-telefone">Só números, parênteses, traços e espaços.</p>
+                </div>
+
+                <fieldset>
+                    <legend>Você vai no ônibus da turma?</legend>
+                    <div class="opcao">
+                        <input type="radio" id="onibus-sim" name="onibus" value="sim" required>
+                        <label for="onibus-sim">Sim, vou no ônibus</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="onibus-nao" name="onibus" value="nao">
+                        <label for="onibus-nao">Não, vou por conta própria</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Restrição alimentar</legend>
+                    <div class="opcao">
+                        <input type="checkbox" id="veg" name="restricao" value="veg">
+                        <label for="veg">Vegetariano</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="checkbox" id="lactose" name="restricao" value="lactose">
+                        <label for="lactose">Intolerância à lactose</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="checkbox" id="gluten" name="restricao" value="gluten">
+                        <label for="gluten">Intolerância a glúten</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="acompanhantes">Quantos acompanhantes</label>
+                    <select id="acompanhantes" name="acompanhantes">
+                        <option value="0">Nenhum</option>
+                        <option value="1">1 acompanhante</option>
+                        <option value="2">2 acompanhantes</option>
+                        <option value="3">3 ou mais</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="recado">Recado para a comissão</label>
+                    <textarea id="recado" name="recado" rows="4"></textarea>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="consentimento" name="consentimento" value="sim">
+                    <label for="consentimento">Autorizo o uso das fotos do dia no mural da turma</label>
+                </div>
+
+                <button type="submit" aria-label="Enviar">Confirmar presença</button>
+
+                <div role="button" tabindex="-1" class="botao-falso">Limpar formulário</div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Comissão de formatura TI116 — <a href="mailto:ti116@exemplo.com">ti116@exemplo.com</a></p>
+    </footer>
+
+</body>
+
+</html>
