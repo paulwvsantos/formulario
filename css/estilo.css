@@ -108,6 +108,7 @@ button {
     font-size: 16px;
     font-family: inherit;
     cursor: pointer;
+    background-color: #8bd3c9;
 }
 
 .campo {
@@ -151,7 +152,7 @@ legend {
     display: inline-block;
     margin-left: 12px;
     padding: 12px 20px;
-    border: 1px solid #C9CFD8;
+    border: 1px solid #dcdee2;
     border-radius: 4px;
     cursor: pointer;
 }
